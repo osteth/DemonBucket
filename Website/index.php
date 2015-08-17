@@ -319,7 +319,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="title-v1">
                     <h1>We are Demon<span class="color-green">Bucket</span></h1>
                     <p>Demon<span class="color-green">Bucket</span> is a public Demon<span class="color-green">Saw</span> file sharing group as well as a network of Demon<span class="color-green">Saw</span> servers.<br>
-					Transfering Files across our network  allows your transfer to be broken down in to small chucnks, 
+					Transfering Files across our network  allows your transfer to be broken down in to small chunks, 
 					<br>distributed across the network and reassembled at their destination.  
 					<br>
 					
@@ -441,7 +441,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         <div class="parallax-quote parallaxBg">
             <div class="container">
                 <div class="parallax-quote-in">
-                    <p> "The Solution to file sharing isn't to stop doing it, but yo stop governments and corporations from knowing that we are doing it." <br> "Do you believe in the <span class="color-green">Right to Share?</span>.</p>
+                    <p> "The Solution to file sharing isn't to stop doing it, but to stop governments and corporations from knowing that we are doing it." <br> "Do you believe in the <span class="color-green">Right to Share?</span></p>
                     <small>- Eijah -</small>
                 </div>
             </div>
@@ -599,7 +599,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>
 
         <div class="copyright-section">
-            <p>2014 &copy; All Rights Reserved. Demon<span class="color-green">Bucket</span></a></p>
+            <p>2015 &copy; All Rights Reserved. Demon<span class="color-green">Bucket</span></a></p>
         <!--   <ul class="social-icons">
                 <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
                 <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
