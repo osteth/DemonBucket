@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demonsaw version="2">
+	<view>
+		<option>true</option>
+		<toolbar>true</toolbar>
+		<menubar>true</menubar>
+		<detail>true</detail>
+	</view>
+	<routers>
+		<router enabled="true">
+			<name>Enter Your Server Name Here</name>
+			<address>Enter Your Server IP here</address>
+			<port>Enter Your Server Port Here (port 80 Is preferable)</port>
+						<max>
+				<threads>16</threads>
+				<transfers>1024</transfers>
+			</max>
+			<timeout>
+				<socket>5000</socket>
+				<client>600000</client>
+				<transfer>600000</transfer>
+			</timeout>
+			<transfer>
+				<size>65536</size>
+				<buffer>2097152</buffer>
+				<drift>1048576</drift>
+			</transfer>
+			<feature>
+				<search>true</search>
+				<browse>true</browse>
+				<chat>true</chat>
+				<transfer>true</transfer>
+			</feature>
+				<server enabled="true">
+					<name>Enter Your Server Name Here</name>
+					<address>Enter your server address here</address>
+					<port>Enter Your Server Port Here</port>
+				</server>
+				<server enabled="true">
+					<name>Bucket 1</name>
+					<address>bucket1.demonbucket.com</address>
+					<port>80</port>
+				</server>
+				<server enabled="true">
+					<name>Bucket 2</name>
+					<address>bucket2.demonbucket.com</address>
+					<port>80</port>
+				</server>
+				<server enabled="true">
+					<name>Bucket 3</name>
+					<address>bucket3.demonbucket.com</address>
+					<port>80</port>
+				</server>
+			</servers>
+		</router>
+	</routers>
+</demonsaw>

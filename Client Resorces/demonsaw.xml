@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demonsaw version="2">
+	<view>
+		<option>true</option>
+		<toolbar>true</toolbar>
+		<menubar>true</menubar>
+		<detail>true</detail>
+	</view>
+	<clients>
+		<client enabled="true">
+			<name>Enter A User Name</name>
+			<router>
+				<address>bucket1.demonbucket.com</address>
+				<port>80</port>
+			</router>
+			<security>
+				<key_size>128</key_size>
+				<prime_size>128</prime_size>
+				<hash>0</hash>
+				<salt/>
+			</security>
+			<timeout>
+				<socket>5000</socket>
+				<download>60000</download>
+				<upload>60000</upload>
+			</timeout>
+			<transfer>
+				<path>Enter a path where you would like your download to go</path>
+				<searches>100</searches>
+				<downloads>5</downloads>
+				<uploads>5</uploads>
+			</transfer>
+			<groups>
+				<group enabled="false">
+					<path/>
+					<entropy>100.00</entropy>
+					<cipher>0</cipher>
+					<key_size>128</key_size>
+					<hash>0</hash>
+					<salt/>
+					<iterations>1</iterations>
+				</group>
+			</groups>
+			<folders>
+				<folder>Enter a path to a folder you would like to share</folder>
+			</folders>
+			<files/>
+		</client>
+		
+	</clients>
+	<routers/>
+</demonsaw>
