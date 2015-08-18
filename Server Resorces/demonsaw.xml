@@ -51,6 +51,11 @@
 					<address>bucket3.demonbucket.com</address>
 					<port>80</port>
 				</server>
+				<server enabled="true">
+					<name>Community Bucket1</name>
+					<address>162.13.185.142</address>
+					<port>8080</port>
+				</server>
 			</servers>
 		</router>
 	</routers>
