@@ -1,4 +1,4 @@
-# DemonBucket - Client Resorces
+# DemonBucket - Client Resources
 
 ### Demonsaw.css
 This file is a dark DemonBucket sytle theme for Demonsaw.
