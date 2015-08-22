@@ -31,6 +31,7 @@
 				<chat>true</chat>
 				<transfer>true</transfer>
 			</feature>
+			<servers>
 				<server enabled="true">
 					<name>Enter Your Server Name Here</name>
 					<address>Enter your server address here</address>
