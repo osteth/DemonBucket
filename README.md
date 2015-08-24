@@ -6,6 +6,8 @@ Additionally, Demonbucket Provides a backbone of Demonsaw Routers that can be us
 
 As DemonBucket Development continues all resorces will be released via this Github repository.
 
+Additionally DemonBucket Maintains A repository of bleeding edge pre-release development Builds for Demonsaw. 
+
 If you would like to contribute to the development of DemonBucket please feel free to submit a pull request. All constructive pull requests will be merged. 
 
 ### Current Work In Progess: 

@@ -31,6 +31,7 @@
 				<chat>true</chat>
 				<transfer>true</transfer>
 			</feature>
+			<servers>
 				<server enabled="true">
 					<name>Enter Your Server Name Here</name>
 					<address>Enter your server address here</address>
@@ -54,6 +55,16 @@
 				<server enabled="true">
 					<name>Community Bucket1</name>
 					<address>162.13.185.142</address>
+					<port>8080</port>
+				</server>
+				<server enabled="true">
+					<name>Community Bucket2</name>
+					<address>134.91.36.110</address>
+					<port>17080</port>
+				</server>
+				<server enabled="true">
+					<name>BlackUnicorn.xyz</name>
+					<address>blackunicorn.xyz</address>
 					<port>8080</port>
 				</server>
 			</servers>
