@@ -40,6 +40,8 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 	
 <!-- 		
 /* Usage: 
@@ -49,9 +51,9 @@ $status =  GetServerStatus('IPAddress',80)
 */ -->
 
 <?php
-function GetServerStatus($site, $port)
+function GetServerStatus($site, $port = 80)
 {
-$status = array("OFFLINE", "ONLINE");
+$status = array("<span class=\"color-red\">DOWN</span>", "<span class=\"color-green\">UP</span>");
 $fp = @fsockopen($site, $port, $errno, $errstr, 2);
 if (!$fp) {
     return $status[0];
@@ -382,10 +384,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <h2 class="heading-md">Demon<span class="color-green">Bucket</span> Official</h2>
                         <p>The official Demon<span class="color-green">Bucket</span> hosted servers.</p>
                         <ul class="list-unstyled">
-                            <li>bucket1.demonbucket.com (Status: <span class="color-green">UP</span>)</li>
-                            <li>bucket2.demonbucket.com (Status: <span class="color-green">UP</span>)</li>
-                            <li>bucket3.demonbucket.com (Status: <span class="color-green">UP</span>)</li>
-                            <li>bucket4.demonbucket.com (Status: <span class="color-green">UP</span>)</li>
+                            <li>bucket1.demonbucket.com (Status: <?=GetServerStatus('bucket1.demonbucket.com');?>)</li>
+                            <li>bucket2.demonbucket.com (Status: <?=GetSErverStatus('bucket2.demonbucket.com');?>)</li>
+                            <li>bucket3.demonbucket.com (Status: <?=GetServerStatus('bucket3.demonbucket.com');?>)</li>
+                            <li>bucket4 was taken down and its funds were re-allocated to massively improve bucket1</li>
                             <li>More Coming Soon!</li>
                         </ul>                        
                     </div>
@@ -394,29 +396,31 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="service-block service-block-default">
                         <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-present"></i>
                         <h2 class="heading-sm">Community</h2>
-                        <p>Community servers submitted to the Demon<span class="color-green">Bucket</span> Server List.</p>
+                        <p>Community routers submitted to the Demon<span class="color-green">Bucket</span> Router List.</p>
                         <ul class="list-unstyled">
-                            <li>162.13.185.142:8080 <br> (Status: <span class="color-green">UP</span>)</li>
-                            <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-							              <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-							              <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-							              <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-							              <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-                     
-                        </ul>                        
+                            <li>162.13.185.142:8080 <br> (Status: <?=GetServerStatus('162.13.185.142', 8080);?>)</li>
+                            <li>134.91.36.110:17080 <br> (Status: <?=GetServerStatus('134.91.36.110', 17080);?>)</li>
+                            <li>blackunicorn.xyz:8080 <br>(Status: <?=GetServerStatus('blackunicorn.xyz', 8080);?>)<br>
+                            Provided By:<a href="http://blackunicorn.xyz"> blackunicorn.xyz</a></li>
+                            <li>bucket1.dave.systems <br> (Status: <?=GetServerStatus('bucket1.dave.systems');?>)</li>
+                            <li>ds.shadowflee.club <br> (Status:  <?=GetServerStatus('ds.shadowflee.club');?>)</li>
+                            <li>d3crypt.ddns.net <br> (Status:  <?=GetServerStatus('d3crypt.ddns.net');?>)</li>
+                            <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>
+                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>                    
+                        </ul>                         
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="service-block service-block-default">            
                         <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
                         <h2 class="heading-sm">Chat Enabled</h2>
-                        <p>Servers with Demon<span class="color-green">Saw</span> chat enabled.</p>
+                        <p>routers with Demon<span class="color-green">Saw</span> chat enabled.</p>
                         <ul class="list-unstyled">
-                            <li>bucket1.demonbucket.com (Status: <span class="color-green">UP</span>)</li>
-                            <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-                            <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-                            <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
-                            <li><span class="page-scroll"><a href="#contact" >Submit a Server</a></span></li>
+                            <li>bucket1.demonbucket.com (Status: <?=GetServerStatus('bucket1.demonbucket.com');?>)</li>
+                            <li>blackunicorn.xyz:8080 <br>(Status: <?=GetServerStatus('blackunicorn.xyz', 8080);?>)<br>
+                            Provided By:<a href="http://blackunicorn.xyz"> blackunicorn.xyz</a></li>
+                            <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>  
+                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>
                         </ul>                        
                     </div>
                 </div>
@@ -560,14 +564,14 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="col-md-6 md-margin-bottom-40">
                     <ul class="list-unstyled">
 
-                        <li><i class="fa fa-globe"></i> <a href="http://demonbucket.com"">www.demonbucket.com</a></li>
+                        <li><i class="fa fa-globe"></i> <a href="http://demonbucket.com">www.demonbucket.com</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-6">
                     <form action="assets/php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style">
                         <fieldset>
-                            <label>Server Name</label>
+                            <label>Server Name <span class="color-red">*</span></label>
                             <div class="row">
                                 <div class="col-md-7 margin-bottom-20 col-md-offset-0">
                                     <div>
@@ -576,16 +580,23 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                                 </div>                
                             </div>
                             
-                            <label>Server address <span class="color-red">*</span></label>
+                            <label>Server address (in format address:port) <span class="color-red">*</span></label>
                             <div class="row">
                                 <div class="col-md-7 margin-bottom-20 col-md-offset-0">
                                     <div>
-                                        <input type="text" name="email" id="email" class="form-control">
+                                        <input type="text" name="address" id="address" class="form-control">
                                     </div>
                                 </div>                
                             </div>
                             
-                            
+                            <div class="row">
+                                <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                                    <div>
+                                        <input type="text" style="height:0;padding:0;border:none" name="recaptcha" id="recaptcha">
+                                        <div class="g-recaptcha" data-sitekey="6LetaQwTAAAAAFb2iB-A6BiSvzKO1IhVoZOD-_dI"></div>
+                                    </div>
+                                </div>                
+                            </div>
                             <p><button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark">Submit Server</button></p>
                         </fieldset>
 
