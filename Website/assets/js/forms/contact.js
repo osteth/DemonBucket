@@ -1,3 +1,12 @@
+jQuery.validator.addMethod("captcha", function(value, element) {
+  	if(grecaptcha.getResponse() != '') {
+        return true;
+        console.log('1');
+    } else {
+        return false;
+        console.log('2');
+    }
+}, "Please complete the captcha");
 var ContactForm = function () {
 
     return {
@@ -9,18 +18,17 @@ var ContactForm = function () {
 	            // Rules for form validation
 	            rules:
 	            {
-	                servername:
+	                name:
 	                {
 	                    required: true
 	                },
-	                serveraddress:
+	                address:
 	                {
 	                    required: true
 	                },
-	                captcha:
+	                recaptcha:
 	                {
-	                    required: true,
-	                    remote: 'assets/plugins/sky-forms/version-2.0.1/captcha/process.php'
+	                    captcha: true
 	                }
 	            },
 	                                
@@ -29,11 +37,15 @@ var ContactForm = function () {
 	            {
 	                name:
 	                {
-	                    required: 'Please enter your Server Name',
+	                    required: 'Please enter your Server Name'
 	                },
-	                email:
+	                address:
 	                {
-	                    required: 'Please enter your Server address',
+	                    required: 'Please enter your Server address'
+	                },
+	                recaptcha:
+	                {
+	                	captcha: 'Please complete the captcha'
 	                }
 	            },
 	                                
