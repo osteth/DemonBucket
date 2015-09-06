@@ -561,10 +561,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="title-v1">
                 <h2>Submit a Server</h2>
                 <p>Submit your server to the Demon<span class="color-green">Bucket</span> File Sharing Network.</p>
-							<div class="alert">
-                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
-                <strong>Notice:</strong> I have not finished the server submition form. To submit a server please email server information to Seth@demonbucket.com
-            </div>
             </div>
 			
 
