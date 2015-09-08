@@ -106,7 +106,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         </li>-->
                         <li class="page-scroll">
                             <a href="#contact">Submit a Server</a>
-                        </li>                    
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://github.com/osteth/DemonBucket">GitHub</a>
+                        </li> 
+                        <li class="page-scroll">
+                            <a href="https://www.reddit.com/r/demonbucket">Reddit</a>
+                        </li>  
                     </ul>
                 </div>
             </div>
@@ -352,14 +358,14 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="col-sm-3 col-xs-6">
 						<h2>Get Demonsaw:</h2></br>
 						<h4><a href="https://www.demonsaw.com/download.php">Release Builds</a></h4></p>
-						<h4><a href="https://github.com/osteth/DemonBucket">Developmet Builds</a></h4>
+						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Demonsaw%20Beta%20Builds">Developmet Builds</a></h4>
                     </div>
                     <div class="col-sm-3 col-xs-6">
 						<h2>Set-up Guides:</h2></br>
                         <h4><a href="https://www.youtube.com/watch?v=vdK92aCS0_c">Tutorial: Using Demonsaw on the DemonBucket Network</a></h4></p>
 						<h4><a href="http://www.stinebaugh.info/a-public-demonsaw-router-by-blackunicorn/">Router Config Documentation</a></h4></p>
 						<h4><a href="https://www.youtube.com/watch?v=ibCdYn5N8wk">Debian 8 Install</a></h4></p>
-						<h4><a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/k">Linux Router Start-up Script</a></h4></p>
+						<h4><a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/">Linux Router Start-up Script</a></h4></p>
 		
 
                     </div>
