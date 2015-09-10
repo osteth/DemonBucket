@@ -8,7 +8,9 @@ This is a script (for linux routers) that will automatically restart you demonsa
 
 ### Starting up your router using Linux CLI router
 1: Upload the latest version of the Demonsaw_router, run-demonsaw-router and Demonsaw.xml
+
 2: chmod demonsaw_router amd run-demonsaw-router
+
 3: run the run-demonsaw-router script
 
 TIP: Running your demonsaw router in screen allows you to reconnect to the session you are running the router in to look at error logs (because demonsaw router errors are echo'd out instead of pushed in to a log file). This is very helpfull in reducing router downtime and troubleshooting issues. 
