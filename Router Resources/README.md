@@ -6,6 +6,8 @@ This is the config file currently being used on the DemonBucket Official routers
 ### run-demonsaw-router
 This is a script (for linux routers) that will automatically restart you demonsaw router in the event of the router crashing. 
 
+This script was written by c3e5g7i9 Check out their github @ https://github.com/c3e5g7i9
+
 ### Starting up your router using Linux CLI router
 1: Upload the latest version of the Demonsaw_router, run-demonsaw-router and Demonsaw.xml
 
