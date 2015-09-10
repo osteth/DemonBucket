@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#
+##
+####
+####
+####  This is a script to start demonsaw_router as a
+####  child process, monitor it, and in the event of failure; 
+####  
+####	1) Restart demonsaw_router
+####	2) Move "core" and append filename with a timestamp using the format: "_YYYYmmDDHHMMSS"
+####	3) Only store five "core_" backup files, deleting the oldest after +5 have been created.
+####
+####
+####
+####
+#### note: This script works by monitoring the exit code when demonsaw_router ends.
+####       If it crashes/exits ungracefully (i.e. anything with a non-zero exit code),
+####       it will restart.  If it closes as expected, it will remain off.  Using "ctrl+c" works nicely.		
+####
+####
+###
+##
+#
+
+until ./demonsaw_router; do
+    echo "'demonsaw_router' crashed with exit code $?.  Respawning..." >&2
+    sleep 1
+    mv core core_$(date -d "now" +"%Y%M%d%H%M%S")
+    ls -tr | grep "core_" | head -n -5 | xargs --no-run-if-empty rm  
+done
+
+#
+##
+####
+####
+####
+####
+####
+###
+##
+#
