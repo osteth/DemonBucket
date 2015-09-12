@@ -106,13 +106,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         </li>-->
                         <li class="page-scroll">
                             <a href="#contact">Submit a Server</a>
-                        </li>
+                        </li> 
                         <li class="page-scroll">
                             <a href="https://github.com/osteth/DemonBucket">GitHub</a>
                         </li> 
                         <li class="page-scroll">
                             <a href="https://www.reddit.com/r/demonbucket">Reddit</a>
-                        </li>  
+                        </li>                    
                     </ul>
                 </div>
             </div>
@@ -363,6 +363,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="col-sm-3 col-xs-6">
 						<h2>Set-up Guides:</h2></br>
                         <h4><a href="https://www.youtube.com/watch?v=vdK92aCS0_c">Tutorial: Using Demonsaw on the DemonBucket Network</a></h4></p>
+                        <h4><a href="https://youtu.be/oimu2mO1KUg">Tutorial: Setting Up a Demonsaw router (Linux-CLI)</a></h4></p>
 						<h4><a href="http://www.stinebaugh.info/a-public-demonsaw-router-by-blackunicorn/">Router Config Documentation</a></h4></p>
 						<h4><a href="https://www.youtube.com/watch?v=ibCdYn5N8wk">Debian 8 Install</a></h4></p>
 						<h4><a href="http://www.stinebaugh.info/demonsaw-startup-script-linux/">Linux Router Start-up Script</a></h4></p>
@@ -376,7 +377,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </div>
                     <div class="col-sm-3 col-xs-6">
 						<h2>News:</h2></br>
-                        <h4><a href="https://github.com/osteth/DemonBucket/tree/master/DemonCoin">DemonCoin Released!</a></h4></p
+                        <h4><a href="https://github.com/osteth/DemonBucket/tree/master/DemonCoin">DemonCoin Released!</a></h4></p>
 						<h4><a href="https://www.reddit.com/r/DemonBucket/">NEW DemonBucket Sub-Reddit</a></h4></p>
 						<h4><a href="http://www.forbes.com/sites/thomasbrewster/2015/08/20/eijah-john-mcafee-and-demonsaw/">Forbes on Demonsaw</a></h4></p>
 						<h4><a href="http://techcrunch.com/2015/08/19/demonsaw-uses-social-cryptography-to-share-files-and-data-anonymously/#.2cge3r:KXol">TechCrunch on Demonsaw</a></h4>    
@@ -401,11 +402,13 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <h2 class="heading-md">Demon<span class="color-green">Bucket</span> Official</h2>
                         <p>The official Demon<span class="color-green">Bucket</span> hosted servers.</p>
                         <ul class="list-unstyled">
-                            <li>bucket1.demonbucket.com (Status: <?=GetServerStatus('bucket1.demonbucket.com', 80);?>)</li>
-                            <li>bucket2.demonbucket.com (Status: <?=GetSErverStatus('bucket2.demonbucket.com', 80);?>)</li>
-                            <li>bucket3.demonbucket.com (Status: <?=GetServerStatus('bucket3.demonbucket.com', 80);?>)</li>
-                            <li>bucket4 was taken down and its funds were re-allocated to massively improve bucket1</li>
-                            <li>More Coming Soon!</li>
+                            <li>bucket1.demonbucket.com (Status: <?=GetServerStatus('bucket1.demonbucket.com', 80);?>) <br>Hub Router</li>
+                            <li>bucket2.demonbucket.com (Status: <?=GetSErverStatus('bucket2.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
+                            <li>bucket3.demonbucket.com (Status: <?=GetServerStatus('bucket3.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
+                            <li>bucket4.demonbucket.com (Status: <?=GetServerStatus('bucket4.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
+                            <li>bucket5.demonbucket.com (Status: <?=GetServerStatus('bucket5.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
+                            <li>dev.demonbucket.com (Status: <?=GetServerStatus('dev.demonbucket.com', 80);?>) <br>Development router</li>
+                            <li>ovhsux.demonbucket.com (Status: <?=GetServerStatus('ovhsux.demonbucket.com', 80);?>) <br>Depricated due to terrible hosting hosting company instability.</li>
                         </ul>                        
                     </div>
                 </div>
@@ -420,23 +423,22 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             Provided By:<a href="http://blackunicorn.xyz"> blackunicorn.xyz</a></li>
                             <li>bucket1.dave.systems <br> (Status: <?=GetServerStatus('bucket1.dave.systems', 80);?>)</li>
                             <li>ds.shadowflee.club <br> (Status:  <?=GetServerStatus('ds.shadowflee.club', 80);?>)</li>
-                            <li>d3crypt.ddns.net <br> (Status:  <?=GetServerStatus('d3crypt.ddns.net', 80);?>)</li>
-                            <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>
-                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>                    
+                            
+                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>
+                  
                         </ul>                         
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="service-block service-block-default">            
                         <i class="icon-custom icon-lg icon-bg-u rounded-x icon-line icon-rocket"></i>
-                        <h2 class="heading-sm">Chat Enabled</h2>
-                        <p>routers with Demon<span class="color-green">Saw</span> chat enabled.</p>
+                        <h2 class="heading-sm">Community</h2>
+                        <p>Community routers submitted to the Demon<span class="color-green">Bucket</span> Router List.</p>
                         <ul class="list-unstyled">
-                            <li>bucket1.demonbucket.com (Status: <?=GetServerStatus('bucket1.demonbucket.com', 80);?>)</li>
-                            <li>blackunicorn.xyz:8080 <br>(Status: <?=GetServerStatus('blackunicorn.xyz', 8080);?>)<br>
-                            Provided By:<a href="http://blackunicorn.xyz"> blackunicorn.xyz</a></li>
-                            <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>  
-                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>
+                            <li>d3crypt.ddns.net <br> (Status:  <?=GetServerStatus('d3crypt.ddns.net', 80);?>)</li>
+                            <li>5.9.91.163:27182 <br> (Status: <?=GetServerStatus('5.9.91.163', 27182);?>)</li>
+                            <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>
+                            <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>  
                         </ul>                        
                     </div>
                 </div>
@@ -622,7 +624,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
         </div>
 
         <div class="copyright-section">
-            <a href="https://demonsbucket.com/privacypolicy.htm">Privacy Policy</a>
+            <a href="http://demonbucket.com/privacypolicy.htm">Privacy Policy</a>
             <br>
             <p>2015 &copy; All Rights Reserved. Demon<span class="color-green">Bucket</span></a></p>
         <!--   <ul class="social-icons">
