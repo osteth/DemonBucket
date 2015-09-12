@@ -376,6 +376,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     </div>
                     <div class="col-sm-3 col-xs-6">
 						<h2>News:</h2></br>
+                        <h4><a href="https://github.com/osteth/DemonBucket/tree/master/DemonCoin">DemonCoin Released!</a></h4></p
 						<h4><a href="https://www.reddit.com/r/DemonBucket/">NEW DemonBucket Sub-Reddit</a></h4></p>
 						<h4><a href="http://www.forbes.com/sites/thomasbrewster/2015/08/20/eijah-john-mcafee-and-demonsaw/">Forbes on Demonsaw</a></h4></p>
 						<h4><a href="http://techcrunch.com/2015/08/19/demonsaw-uses-social-cryptography-to-share-files-and-data-anonymously/#.2cge3r:KXol">TechCrunch on Demonsaw</a></h4>    
