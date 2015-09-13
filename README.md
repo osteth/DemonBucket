@@ -12,6 +12,8 @@ If you would like to contribute to the development of DemonBucket please feel fr
 
 ### Current Work In Progess: 
 * Finish and extend upon Website.
-* * Replace moch-up static content with dynamic content. (server submtion, server up/down tracker, on site file search)
+* Fix demoncoin issues and continue its development
+
+* Create set-up guides
 * Produce In Depth Documentation of all demonsaw.css and demonsaw.xml files to ease community development.
 * Produce Additional Demonsaw Cient Themes.
