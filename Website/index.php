@@ -207,7 +207,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             data-captionhidden="off"
                             style="z-index: 6">
                             Join the Demon<span class="color-green">Bucket</span> public sharing network.<br> 
-                            Share, Search, and Download flies anonymously in our public sharing group.                            
+                            Share, Search, and Download files anonymously in our public sharing group.                            
                         </div>
 
                         <!-- LAYER -->
@@ -293,7 +293,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 			                <div class="alert alert-success fade in">
                     <button aria-hidden="true" data-dismiss="alert" class="close" type="button">x</button>
                     <strong>Notice:</strong> This site is still heavily under construction. Please excuse the mess :) more features will become available as development continues. If you notice any problems or have any concerns please send them to Seth@DemonBucket.com
-					also, The entire source for this site and additional DemonBucket Resorces are available at <a href="https://github.com/osteth/Demonbucket"> https://github.com/osteth/Demonbucket </a> 
+					also, The entire source for this site and additional DemonBucket Resources are available at <a href="https://github.com/osteth/Demonbucket"> https://github.com/osteth/Demonbucket </a> 
                 </div>
 			
                 <div class="row content-boxes-v3">
@@ -327,20 +327,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                 <div class="title-v1">
                     <h1>We are Demon<span class="color-green">Bucket</span></h1>
                     <p>Demon<span class="color-green">Bucket</span> is a public Demon<span class="color-green">Saw</span> file sharing group as well as a network of Demon<span class="color-green">Saw</span> servers.<br>
-					Transfering Files across our network  allows your transfer to be broken down in to small chunks, 
+					Transferring Files across our network  allows your transfer to be broken down in to small chunks, 
 					<br>distributed across the network and reassembled at their destination.  
-					<br>
-					
-					</p>                
-                </div>
-                <div class="img-center">
-                    <img class="img-responsive" src="assets/img/transfer.png" alt="">
-					 </div>
-				<div class="title-v1">
-					<p>This process enhances the security and anonymity of transfering files via Demon<span class="color-green">Saw</span>.</p>
-                </div>
-                
-                
+                        <p>This process enhances the security and anonymity of transferring files via Demon<span class="color-green">Saw</span>.</p>
+                </div>        
                 
             	<div class="title-v1">
 					<p><h1>Getting <span class="color-green">Started:</h1></p>
@@ -358,7 +348,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="col-sm-3 col-xs-6">
 						<h2>Get Demonsaw:</h2></br>
 						<h4><a href="https://www.demonsaw.com/download.php">Release Builds</a></h4></p>
-						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Demonsaw%20Beta%20Builds">Developmet Builds</a></h4>
+						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Demonsaw%20Beta%20Builds">Development Builds</a></h4>
                     </div>
                     <div class="col-sm-3 col-xs-6">
 						<h2>Set-up Guides:</h2></br>
@@ -373,7 +363,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                     <div class="col-sm-3 col-xs-6">
 						<h2>Resources:</h2></br>
 						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Client%20Resources">Client Resources</a></h4></p>
-						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Router%20Resources">Router Reasources</a></h4>   
+						<h4><a href="https://github.com/osteth/DemonBucket/tree/master/Router%20Resources">Router Resources</a></h4>   
                     </div>
                     <div class="col-sm-3 col-xs-6">
 						<h2>News:</h2></br>
@@ -408,7 +398,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <li>bucket4.demonbucket.com (Status: <?=GetServerStatus('bucket4.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
                             <li>bucket5.demonbucket.com (Status: <?=GetServerStatus('bucket5.demonbucket.com', 80);?>) <br>Data Transfer Router</li>
                             <li>dev.demonbucket.com (Status: <?=GetServerStatus('dev.demonbucket.com', 80);?>) <br>Development router</li>
-                            <li>ovhsux.demonbucket.com (Status: <?=GetServerStatus('ovhsux.demonbucket.com', 80);?>) <br>Depricated due to terrible hosting hosting company instability.</li>
+                            <li>ovhsux.demonbucket.com (Status: <?=GetServerStatus('ovhsux.demonbucket.com', 80);?>) <br>Deprecated due to terrible hosting company instability.</li>
                         </ul>                        
                     </div>
                 </div>
@@ -438,6 +428,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                             <li>d3crypt.ddns.net <br> (Status:  <?=GetServerStatus('d3crypt.ddns.net', 80);?>)</li>
                             <li>5.9.91.163:27182 <br> (Status: <?=GetServerStatus('5.9.91.163', 27182);?>)</li>
                             <li>y-cwmwl.co.uk:8181 <br> (Status:  <?=GetServerStatus('y-cwmwl.co.uk', 8181);?>)</li>
+                            <li>msg.blacklistlink.com :60605 <br> (Status:  <?=GetServerStatus('msg.blacklistlink.com', 60605);?>)</li>
                             <li><span class="page-scroll"><a href="#contact">Submit a Router</a></span></li>  
                         </ul>                        
                     </div>
@@ -449,10 +440,10 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
             <div class="container">
                 <div class="call-action-v1-box">
                     <div class="call-action-v1-in">
-                        <p>Demon<span class="color-green">Bucket</span> Servers are funded by Community supporters. If you you would like to help keep the servers up and running please show your support by donating. </p>
+                        <p>Demon<span class="color-green">Bucket</span> Servers are funded by Community supporters. If you would like to help keep the servers up and running please show your support by donating. </p>
                     </div>
                     <div class="call-action-v1-in inner-btn page-scroll">
-                        <a href="#donate" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">Dontate to Demon<span class="color-green">Bucket</span></a>
+                        <a href="#donate" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">Donate to Demon<span class="color-green">Bucket</span></a>
                     </div>
                 </div>
             </div>
@@ -474,8 +465,8 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
     <section id="donate">
         <div class="container content-lg">
             <div class="title-v1">
-                <h2>Dontate to Demon<span class="color-green">Bucket</span></h2>
-                <p>DemonBucket Servers are funded by Community supporters. If you you would like to help keep the servers up and running please show your support by donating.</p>
+                <h2>Donate to Demon<span class="color-green">Bucket</span></h2>
+                <p>DemonBucket Servers are funded by Community supporters. If you would like to help keep the servers up and running please show your support by donating.</p>
             </div>
 
             <div class="row">
@@ -495,6 +486,18 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         </div>
                     </div>
                    
+                     <div class="clearfix margin-bottom-30">
+                        <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-present"></i>
+                        <div class="content-boxes-in-v3">
+                            <h2 class="heading-sm">PayPal Donations:</h2>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="DZDE7Y58NN566">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                        </div>
+                    </div>             
                 </div>
 
                 <div class="col-md-6">
@@ -505,7 +508,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 		
 		</section>
 		
-   
 
     <!--  About Section -->
     
