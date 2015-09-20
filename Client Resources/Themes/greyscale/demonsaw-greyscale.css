@@ -212,9 +212,10 @@ QHeaderView::up-arrow {
 	padding-right: 4px; 
 }
 
+/* PANEL FOR BROWSE/SEARCH/GROUP/SHARE & DOWNLOAD/UPLOAD/QUEUED/ERRORS */
 QTabBar, QTabWidget, QStackedWidget { 
 	alignment: left; 
-	background: #181818; 
+	background: transparent; 
 	spacing: 0; 
 	padding: 0; 
 	margin: 0; 
@@ -332,7 +333,7 @@ QToolButton:pressed {
 }
 
 QToolButton:hover { 
-	background-color: #585858; 
+	background-color: transparent; 
 	border-left: 1px solid #FFFFFF; 
 	border-right: 1px solid #FFFFFF; 
 	border-bottom: 1px solid #FFFFFF;
@@ -348,7 +349,7 @@ QToolButton:checked {
 }
 /* END OF TOOLBAR BUTTONS */
 
-
+/* CONTAINER FOR BOTTOM RIGHT CLEAR BUTTON & TOP SEARCH BOX/GROUP ADD ETC */
 QToolBar#tab { 
 	color: #DFF0D8; /* where is this at??? */
 	border: 0; 
@@ -356,6 +357,7 @@ QToolBar#tab {
 	padding: 0; 
 	margin: 0; 
 }
+/* END */
 
 /* RIGHT SIDE CLEAR/REFRESH/ADD/REMOVE BUTTONS */
 QToolButton#tab { 
@@ -499,7 +501,7 @@ QMenu::item:selected {
 	color: #FFFFFF; 
 }
 
-QMenu::icon { 
+QMenu::icon { /* ICON FOR MENUS */
 	height: 14px; 
 	width: 14px; 
 	background: transparent;
@@ -563,24 +565,24 @@ QTextEdit {
 }
 
 /* ALL OTHER TEXT EDIT BOXES */
-QLineEdit { 
+QLineEdit { /* CLIENT NAME/DL PATH & AUDIO PATH */
 	height: 18px; 
 	font-size: 12px; 
 	background: #585858; 
 	border: 1px solid #FFFFFF; 
 	selection-color: #FFFFFF; 
-	selection-background-color: #585858; 
+	selection-background-color: #000000; 
 	padding: 0; 
 }
 
-QLineEdit#tab { 
+QLineEdit#tab { /* SEARCH BAR EDIT BOX */
 	height: 20px; 
 	font-size: 12px; 
 	background: #585858; 
 	border: 1px solid #FFFFFF; 
 	border-bottom: 0; 
 	selection-color: #FFFFFF; 
-	selection-background-color: #585858; 
+	selection-background-color: #000000; 
 	border-spacing: 1px;
 	padding: 0;
 }
@@ -590,7 +592,7 @@ QLineEdit#pane { height: 18px;
 	background: #585858;
 	border: 1px solid #FFFFFF;
 	selection-color: #FFFFFF;
-	selection-background-color: #585858;
+	selection-background-color: #000000;
 	border-spacing: 1px;
 	padding: 0;
 }
@@ -616,7 +618,7 @@ QLabel#image { width: 16px;
 
 QComboBox, QQListView { height: 18px;
 	font-size: 12px;
-	background: black;
+	background: transparent;
 	border: 1px solid #FFFFFF;
 	selection-color: #FFFFFF;
 	selection-background-color: #585858;
@@ -629,7 +631,7 @@ QComboBox, QQListView { height: 18px;
 
 
 /* LIST BACKGROUND FOR BROWSE/SEARCH/GROUP/SAHRE/DL/UP/Q/ERRORS */
-QAbstractItemView { height: 18px;
+QAbstractItemView { height: 18px; /* SORT/TITLE BAR FOR ABOVE AREA */
 	font-size: 12px;
 	background: #585858;
 	border: 0;
@@ -923,7 +925,7 @@ QGroupBox::title { background: transparent;
 QSpinBox { background: #585858;
 	border: 1px solid #FFFFFF;
 	padding-right: 4px;
-	background-color: #000000;
+	background-color: #585858;
 	/* make room for the arrows */ 
 }
 
@@ -951,11 +953,11 @@ QSpinBox::down-arrow { image: url(:/tree/sort_down_dark.png);
 }
 /* END OF SPINBOX CSS */
 
-
+/* SPIN BOXES FOR GROUPS */
 QDoubleSpinBox { background: #585858;
 	border: 1px solid #FFFFFF;
 	padding-right: 4px;
-	background-color: black;
+	background-color: #585858;
 	/* make room for the arrows */ 
 }
 
@@ -983,7 +985,7 @@ QDoubleSpinBox::down-arrow { image: url(:/tree/sort_down_dark.png);
 	height: 10px;
 	bottom: 1px;
 }
-
+/* END OF GROUP SPINBOX SECTION */
 
 
 QButton { background: #181818;
@@ -997,6 +999,6 @@ QToolTip { font-size: 12px;
 	font-weight: bold;
 	color: #FFFFFF;
 	border: 1px solid #FFFFFF;
-	background-color: #000000;
+	background-color: #181818;
 }
 /* END OF TOOLTIP STYLE */
