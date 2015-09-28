@@ -22,7 +22,7 @@ QWidget#tab {
 	border: 0; 
 }
 
-/* GROUP TAB ITEM STYLE */
+/* GROUP TAB & DL/UP/Queue/Error ITEM STYLE */
 QTableView { 
 	font-size: 14px; 
 	background-color: #585858; 
@@ -43,9 +43,10 @@ QTableView::item {
 }
 
 QTableView::item:selected { 
-	border: 0; 
+	border: 1px solid #FFFFFF; 
+	background: transparent;
 	color: #FFFFFF;
-	background: #181818; 
+	outline: 0;
 }
 
 /* GROUP BOX ITEM SELECTION FOCUS */
