@@ -22,7 +22,7 @@ QWidget#tab {
 	border: 0; 
 }
 
-/* GROUP TAB ITEM STYLE */
+/* GROUP TAB & DL/UP/Queue/Error ITEM STYLE */
 QTableView { 
 	font-size: 14px; 
 	background-color: #585858; 
@@ -32,7 +32,7 @@ QTableView {
 	margin: 0; 
 	border: 0; 
 	outline: 0;
-	alternate-background-color: #181818; 
+	alternate-background-color: #414141; /* Alt color for bottom section */
 }
 
 QTableView::item { 
@@ -43,9 +43,10 @@ QTableView::item {
 }
 
 QTableView::item:selected { 
-	border: 0; 
+	border: 1px solid #FFFFFF; 
+	background: transparent;
 	color: #FFFFFF;
-	background: #181818; 
+	outline: 0;
 }
 
 /* GROUP BOX ITEM SELECTION FOCUS */
@@ -99,7 +100,7 @@ QTreeView {
 	border: 0; 
 	outline: 0; 
 	color: #FFFFFF; 
-	alternate-background-color: #343434; /* BROWSE ALT BACKGROUND */
+	alternate-background-color: #414141; /* BROWSE ALT BACKGROUND */
 }
 
 QTreeView::item { 
@@ -302,7 +303,7 @@ QToolBox:tab:selected:hover {
 /* TOP TOOLBAR - CLIENT BUTTONS AND ALL */
 QToolBar { 
 	height: 49px; 
-	color: #FF0000; /* Where is this used at?? */
+	color: #FFFFFF; /* Where is this used at?? */
 	background-color: #181818; 
 	border: 0; 
 	border-bottom: 1px solid #FFFFFF; 
@@ -351,7 +352,7 @@ QToolButton:checked {
 
 /* CONTAINER FOR BOTTOM RIGHT CLEAR BUTTON & TOP SEARCH BOX/GROUP ADD ETC */
 QToolBar#tab { 
-	color: #DFF0D8; /* where is this at??? */
+	color: #FFFFFF; /* where is this at??? */
 	border: 0; 
 	spacing: 0; 
 	padding: 0; 
@@ -462,7 +463,7 @@ QSeparator {
 }
 
 QMenuBar { 
-	color: #DFF0D8; 
+	color: #FFFFFF; 
 	font-size: 13px; 
 	background-color: #181818; 
 	border-bottom: 1px solid #FFFFFF; 
