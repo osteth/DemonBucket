@@ -29,15 +29,19 @@ debian/ubuntu/kali: sudo apt-get install screen
 #####Steps to use:
 
 **1:** chmod +x screen-demonsaw-router.sh
+
 makes the file executable
 
 **2:** nano screen-demonsaw-router.sh
+
 change the info to match your system between the Settings comments and save.
 
 **3:** ./screen-demonsaw-router.sh
+
 run's the script
 
 **4:** screen -RD demonsaw
+
 will join you to the screen named demonsaw, where your router should now be running!
 
 Exit screen with "ctrl+a,d" you can always join it again later!
