@@ -1,0 +1,32 @@
+# The following part always gets executed.
+# You must update the file paths for your system.
+echo "Demonsaw autoboot in /etc/init.d/demonsaw is running!"
+
+# The following part carries out specific functions depending on the arguments.
+
+case "$1" in
+	start)
+	echo "Starting Demonsaw Now!"
+	cd /var/demonsaw
+        sudo ./demonsaw-screen.sh
+	
+	;;
+
+        stop)
+        echo "trying to pkill demonsaw"
+        # pkill should not normally be used as it will stop any process identified.
+        # This is the best way I could find to kill the server when needed.
+        sudo pkill demonsaw
+        echo "Demonsaw should now be killed!"
+
+        ;;
+	
+	*)
+	
+	echo "usage: /etc/init.d/demonsaw {start|stop}"
+	exit 1
+	;;
+
+esac
+
+exit 0
