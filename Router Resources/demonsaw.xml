@@ -60,11 +60,16 @@
 					<name>davesys</name>
 					<address>bucket1.dave.systems </address>
 					<port>80</port>
-			    </server>
+				</server>
                 <server enabled="true">
 					<name>shadowflee</name>
 					<address>ds.shadowflee.club</address>
 					<port>80</port>
+				</server>
+                <server enabled="true">
+					<name>DIAU Network</name>
+					<address>diau.net</address>
+					<port>9001</port>
 				</server>
 			</servers>
 		</router>
