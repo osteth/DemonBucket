@@ -1,3 +1,12 @@
+### BEGIN INIT INFO
+# Provides:          DemonsawRouter
+# Required-Start:    $network
+# Required-Stop:     $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Demonsaw Router
+# Description:       Start and Stop the Demonsaw Router as a init.d service.
+### END INIT INFO
 # The following part always gets executed.
 # You must update the file paths for your system.
 echo "Demonsaw autoboot in /etc/init.d/demonsaw is running!"
