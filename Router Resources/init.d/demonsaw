@@ -1,23 +1,29 @@
+#!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          DemonsawRouter
-# Required-Start:    $network
-# Required-Stop:     $network
+# Provides:          demonsaw
+# Required-Start:    $local_fs $remote_fs $network $syslog $named
+# Required-Stop:     $local_fs $remote_fs $network $syslog $named
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Demonsaw Router
-# Description:       Start and Stop the Demonsaw Router as a init.d service.
+# X-Interactive:     true
+# Short-Description: demonsaw 3 server
+# Description:       Start the demonsaw server
+#  This script will start the demonsaw server.
 ### END INIT INFO
+
 # The following part always gets executed.
 # You must update the file paths for your system.
 echo "Demonsaw autoboot in /etc/init.d/demonsaw is running!"
+
+
 
 # The following part carries out specific functions depending on the arguments.
 
 case "$1" in
 	start)
 	echo "Starting Demonsaw Now!"
-	cd /var/demonsaw
-        sudo ./demonsaw-screen.sh
+         cd /var/www/demonsaw/
+         ./demonsaw-screen.sh
 	
 	;;
 
@@ -25,7 +31,7 @@ case "$1" in
         echo "trying to pkill demonsaw"
         # pkill should not normally be used as it will stop any process identified.
         # This is the best way I could find to kill the server when needed.
-        sudo pkill demonsaw
+         pkill demonsaw
         echo "Demonsaw should now be killed!"
 
         ;;
