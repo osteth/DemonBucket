@@ -35,10 +35,22 @@ case "$1" in
         echo "Demonsaw should now be killed!"
 
         ;;
+
+        restart)
+        echo "trying to pkill demonsaw"
+        # pkill should not normally be used as it will stop any process identified.
+        # This is the best way I could find to kill the server when needed.
+         pkill demonsaw
+        echo "Demonsaw should now be killed!"
+        echo "Starting Demonsaw Now!"
+         cd /var/www/demonsaw/
+         ./demonsaw-screen.sh
+
+        ;;
 	
 	*)
 	
-	echo "usage: /etc/init.d/demonsaw {start|stop}"
+	echo "usage: /etc/init.d/demonsaw {start|restart|stop}"
 	exit 1
 	;;
 
